@@ -67,7 +67,8 @@ body {
 /* --- HERO --- */
 .hero {
   height: 60vh;
-  background: url('/hero.png') center/cover;
+  background: url('/hero.png') center/contain no-repeat;
+  background-color: #000; /* color de fondo para los bordes vacíos */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,6 +76,8 @@ body {
   color: white;
   text-align: center;
   position: relative;
+  background-size: cover;
+  background-position: 80% center;
 }
 
 .hero h1 {
